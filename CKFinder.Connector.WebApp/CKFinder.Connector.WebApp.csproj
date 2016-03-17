@@ -46,35 +46,35 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="CKSource.CKFinder.Connector.Config, Version=3.3.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\CKSource.CKFinder.Connector.Config.3.3.0-rc3\lib\net45\CKSource.CKFinder.Connector.Config.dll</HintPath>
+      <HintPath>..\packages\CKSource.CKFinder.Connector.Config.3.3.0-rc5\lib\net45\CKSource.CKFinder.Connector.Config.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="CKSource.CKFinder.Connector.Core, Version=3.3.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\CKSource.CKFinder.Connector.Core.3.3.0-rc3\lib\net45\CKSource.CKFinder.Connector.Core.dll</HintPath>
+      <HintPath>..\packages\CKSource.CKFinder.Connector.Core.3.3.0-rc5\lib\net45\CKSource.CKFinder.Connector.Core.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="CKSource.CKFinder.Connector.Host.Owin, Version=3.3.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\CKSource.CKFinder.Connector.Host.Owin.3.3.0-rc3\lib\net45\CKSource.CKFinder.Connector.Host.Owin.dll</HintPath>
+      <HintPath>..\packages\CKSource.CKFinder.Connector.Host.Owin.3.3.0-rc5\lib\net45\CKSource.CKFinder.Connector.Host.Owin.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="CKSource.CKFinder.Connector.KeyValue.EntityFramework, Version=3.3.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\CKSource.CKFinder.Connector.KeyValue.EntityFramework.3.3.0-rc3\lib\net45\CKSource.CKFinder.Connector.KeyValue.EntityFramework.dll</HintPath>
+      <HintPath>..\packages\CKSource.CKFinder.Connector.KeyValue.EntityFramework.3.3.0-rc5\lib\net45\CKSource.CKFinder.Connector.KeyValue.EntityFramework.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="CKSource.CKFinder.Connector.Logs.NLog, Version=3.3.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\CKSource.CKFinder.Connector.Logs.NLog.3.3.0-rc3\lib\net45\CKSource.CKFinder.Connector.Logs.NLog.dll</HintPath>
+      <HintPath>..\packages\CKSource.CKFinder.Connector.Logs.NLog.3.3.0-rc5\lib\net45\CKSource.CKFinder.Connector.Logs.NLog.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="CKSource.FileSystem">
-      <HintPath>..\packages\CKSource.FileSystem.1.0.0-rc1\lib\net45\CKSource.FileSystem.dll</HintPath>
+    <Reference Include="CKSource.FileSystem, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\CKSource.FileSystem.1.0.0-rc2\lib\net45\CKSource.FileSystem.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="CKSource.FileSystem.Dropbox">
-      <HintPath>..\packages\CKSource.FileSystem.Dropbox.1.0.0-rc1\lib\net45\CKSource.FileSystem.Dropbox.dll</HintPath>
+    <Reference Include="CKSource.FileSystem.Dropbox, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\CKSource.FileSystem.Dropbox.1.0.0-rc2\lib\net45\CKSource.FileSystem.Dropbox.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="CKSource.FileSystem.Local">
-      <HintPath>..\packages\CKSource.FileSystem.Local.1.0.0-rc1\lib\net45\CKSource.FileSystem.Local.dll</HintPath>
+    <Reference Include="CKSource.FileSystem.Local, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\CKSource.FileSystem.Local.1.0.0-rc2\lib\net45\CKSource.FileSystem.Local.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Dropbox.Api, Version=0.1.5879.24015, Culture=neutral, PublicKeyToken=310f0e82fbb45d01, processorArchitecture=MSIL">
@@ -536,6 +536,7 @@
     <Content Include="packages.config">
       <SubType>Designer</SubType>
     </Content>
+    <Content Include="NLog.config" />
     <Content Include="CKFinderScripts\plugins\README.md" />
     <Content Include="CKFinderScripts\lang\zh-tw.json" />
     <Content Include="CKFinderScripts\lang\zh-cn.json" />
@@ -581,7 +582,6 @@
     <Content Include="CKFinderScripts\lang\cs.json" />
     <Content Include="CKFinderScripts\lang\ca.json" />
     <Content Include="CKFinderScripts\lang\bg.json" />
-    <Content Include="NLog.config" />
     <None Include="Properties\PublishProfiles\Default.pubxml" />
     <None Include="_bin_deployableAssemblies\x86\sqlcese40.dll" />
     <None Include="_bin_deployableAssemblies\x86\sqlceqp40.dll" />
