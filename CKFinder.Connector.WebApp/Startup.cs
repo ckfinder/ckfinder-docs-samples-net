@@ -9,6 +9,9 @@
  * modifying or distribute this file or part of its contents.
  */
 
+using CKSource.FileSystem.Amazon;
+using CKSource.FileSystem.Azure;
+
 [assembly: Microsoft.Owin.OwinStartup(typeof(CKSource.CKFinder.Connector.WebApp.Startup))]
 
 namespace CKSource.CKFinder.Connector.WebApp
@@ -51,6 +54,7 @@ namespace CKSource.CKFinder.Connector.WebApp
         {
             FileSystemFactory.RegisterFileSystem<LocalStorage>();
             FileSystemFactory.RegisterFileSystem<DropboxStorage>();
+            FileSystemFactory.RegisterFileSystem<AmazonStorage>();
         }
 
         private static void SetupConnector(IAppBuilder builder)

@@ -49,31 +49,31 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="CKSource.CKFinder.Connector.Config, Version=3.3.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\CKSource.CKFinder.Connector.Config.3.3.0-rc5\lib\net45\CKSource.CKFinder.Connector.Config.dll</HintPath>
+      <HintPath>..\packages\CKSource.CKFinder.Connector.Config.3.3.0-rc6\lib\net45\CKSource.CKFinder.Connector.Config.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="CKSource.CKFinder.Connector.Core, Version=3.3.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\CKSource.CKFinder.Connector.Core.3.3.0-rc5\lib\net45\CKSource.CKFinder.Connector.Core.dll</HintPath>
+      <HintPath>..\packages\CKSource.CKFinder.Connector.Core.3.3.0-rc6\lib\net45\CKSource.CKFinder.Connector.Core.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="CKSource.CKFinder.Connector.Host.Owin, Version=3.3.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\CKSource.CKFinder.Connector.Host.Owin.3.3.0-rc5\lib\net45\CKSource.CKFinder.Connector.Host.Owin.dll</HintPath>
+      <HintPath>..\packages\CKSource.CKFinder.Connector.Host.Owin.3.3.0-rc6\lib\net45\CKSource.CKFinder.Connector.Host.Owin.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="CKSource.CKFinder.Connector.KeyValue.EntityFramework, Version=3.3.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\CKSource.CKFinder.Connector.KeyValue.EntityFramework.3.3.0-rc5\lib\net45\CKSource.CKFinder.Connector.KeyValue.EntityFramework.dll</HintPath>
+      <HintPath>..\packages\CKSource.CKFinder.Connector.KeyValue.EntityFramework.3.3.0-rc6\lib\net45\CKSource.CKFinder.Connector.KeyValue.EntityFramework.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="CKSource.CKFinder.Connector.Logs.NLog, Version=3.3.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\CKSource.CKFinder.Connector.Logs.NLog.3.3.0-rc5\lib\net45\CKSource.CKFinder.Connector.Logs.NLog.dll</HintPath>
+      <HintPath>..\packages\CKSource.CKFinder.Connector.Logs.NLog.3.3.0-rc6\lib\net45\CKSource.CKFinder.Connector.Logs.NLog.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="CKSource.FileSystem, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\CKSource.FileSystem.1.0.0-rc2\lib\net45\CKSource.FileSystem.dll</HintPath>
+      <HintPath>..\packages\CKSource.FileSystem.1.0.0-rc3\lib\net45\CKSource.FileSystem.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="CKSource.FileSystem.Local, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\CKSource.FileSystem.Local.1.0.0-rc2\lib\net45\CKSource.FileSystem.Local.dll</HintPath>
+      <HintPath>..\packages\CKSource.FileSystem.Local.1.0.0-rc3\lib\net45\CKSource.FileSystem.Local.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="EntityFramework.SqlServerCompact, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
