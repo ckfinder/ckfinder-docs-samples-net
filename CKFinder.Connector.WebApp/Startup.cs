@@ -9,9 +9,6 @@
  * modifying or distribute this file or part of its contents.
  */
 
-using CKSource.FileSystem.Amazon;
-using CKSource.FileSystem.Azure;
-
 [assembly: Microsoft.Owin.OwinStartup(typeof(CKSource.CKFinder.Connector.WebApp.Startup))]
 
 namespace CKSource.CKFinder.Connector.WebApp
@@ -26,6 +23,8 @@ namespace CKSource.CKFinder.Connector.WebApp
     using CKSource.CKFinder.Connector.KeyValue.EntityFramework;
     using CKSource.FileSystem.Dropbox;
     using CKSource.FileSystem.Local;
+    using CKSource.FileSystem.Amazon;
+    using CKSource.FileSystem.Azure;
 
     using Microsoft.Owin.Security;
     using Microsoft.Owin.Security.Cookies;

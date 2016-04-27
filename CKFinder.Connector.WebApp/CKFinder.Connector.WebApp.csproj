@@ -45,6 +45,10 @@
       <HintPath>..\packages\Autofac.3.5.2\lib\net40\Autofac.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="AWSSDK, Version=2.3.55.0, Culture=neutral, PublicKeyToken=9f476d3089b52be3, processorArchitecture=MSIL">
+      <HintPath>..\packages\AWSSDK.2.3.55.0\lib\net45\AWSSDK.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="CKSource.CKFinder.Connector.Config, Version=3.3.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\CKSource.CKFinder.Connector.Config.3.3.0-rc6\lib\net45\CKSource.CKFinder.Connector.Config.dll</HintPath>
       <Private>True</Private>
