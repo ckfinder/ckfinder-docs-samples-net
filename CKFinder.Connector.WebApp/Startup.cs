@@ -54,6 +54,7 @@ namespace CKSource.CKFinder.Connector.WebApp
             FileSystemFactory.RegisterFileSystem<LocalStorage>();
             FileSystemFactory.RegisterFileSystem<DropboxStorage>();
             FileSystemFactory.RegisterFileSystem<AmazonStorage>();
+            FileSystemFactory.RegisterFileSystem<AzureStorage>();
         }
 
         private static void SetupConnector(IAppBuilder builder)
