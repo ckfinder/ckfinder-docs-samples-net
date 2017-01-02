@@ -20,6 +20,7 @@
     using ImageProcessor.Common.Exceptions;
     using ImageProcessor.Imaging;
     using ImageProcessor.Imaging.Formats;
+ 
 
     [Export(typeof(IPlugin))]
     public class WatermarkPlugin : IPlugin, IDisposable
@@ -36,20 +37,22 @@
 
         public void Initialize(IComponentResolver componentResolver, IReadOnlyDictionary<string, IReadOnlyCollection<string>> options)
         {
-            var watermarkImagePath = options["watermarkPath"].FirstOrDefault();
+            var watermarkImagePath = options.ContainsKey("watermarkPath") ? options["watermarkPath"].FirstOrDefault() : null;
+
             if (string.IsNullOrEmpty(watermarkImagePath))
             {
                 throw new CustomErrorException("Parameter watermarkPath is required");
             }
 
-            Position.TryParse(options["position"].FirstOrDefault() ?? "l,t", out _position);
+            Position.TryParse(options.ContainsKey("position") ? options["position"].FirstOrDefault() : "l,t", out _position);
+
             if ((_position.LeftAnchor == HorizontalAnchor.None && _position.RightAnchor == HorizontalAnchor.None) ||
                 (_position.TopAnchor == VerticalAnchor.None && _position.BottomAnchor == VerticalAnchor.None))
             {
                 throw new CustomErrorException("Position is invalid");
             }
 
-            _opacity = int.Parse(options["opacity"].FirstOrDefault() ?? "50");
+            _opacity = int.Parse(options.ContainsKey("opacity") ? options["opacity"].FirstOrDefault() : "100");
 
             _watermarkImage = Image.FromFile(watermarkImagePath);
 
