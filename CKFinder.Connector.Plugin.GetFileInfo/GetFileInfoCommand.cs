@@ -60,7 +60,7 @@ namespace CKSource.CKFinder.Connector.Plugin.GetFileInfo
                 throw new InvalidRequestException();
             }
 
-            var resourceType = await _resourceTypeRepository.GetByNameAsync(resourceTypeName, cancellationToken);
+            var resourceType = _resourceTypeRepository.GetByName(resourceTypeName);
 
             var file = _nodeFactory.CreateFile(resourceType, Path.Combine(currentFolderName, fileName));
             await _nodeValidator.ThrowIfReadDeniedAsync(file, cancellationToken);

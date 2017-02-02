@@ -34,12 +34,11 @@
       <HintPath>..\packages\Autofac.3.5.2\lib\net40\Autofac.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="CKSource.CKFinder.Connector.Core, Version=3.3.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\CKSource.CKFinder.Connector.Core.3.3.0\lib\net45\CKSource.CKFinder.Connector.Core.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="CKSource.CKFinder.Connector.Core">
+      <HintPath>..\packages\CKSource.CKFinder.Connector.Core.3.4.1\lib\net45\CKSource.CKFinder.Connector.Core.dll</HintPath>
     </Reference>
-    <Reference Include="CKSource.FileSystem, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\CKSource.FileSystem.1.0.0\lib\net45\CKSource.FileSystem.dll</HintPath>
+    <Reference Include="CKSource.FileSystem, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\CKSource.FileSystem.1.1.0\lib\net45\CKSource.FileSystem.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="ImageProcessor, Version=2.3.3.0, Culture=neutral, processorArchitecture=MSIL">

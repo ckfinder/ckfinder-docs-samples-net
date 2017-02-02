@@ -5,7 +5,7 @@ namespace CKSource.CKFinder.Connector.MVCIntegration
     using CKSource.CKFinder.Connector.Core.Builders;
     using CKSource.CKFinder.Connector.Core.Logs;
     using CKSource.CKFinder.Connector.Host.Owin;
-    using CKSource.CKFinder.Connector.KeyValue.EntityFramework;
+    using CKSource.CKFinder.Connector.KeyValue.FileSystem;
     using CKSource.CKFinder.Connector.Logs.NLog;
     using CKSource.FileSystem.Local;
 
@@ -30,12 +30,9 @@ namespace CKSource.CKFinder.Connector.MVCIntegration
              */
             app.Map("/ckfinder/connector", SetupConnector);
         }
+
         private static void SetupConnector(IAppBuilder app)
         {
-            /*
-             * Create a key-value store provider to be used for saving CKFinder cache data.
-             */
-            var keyValueStoreProvider = new EntityFrameworkKeyValueStoreProvider("CKFinderCacheConnection");
             /*
              * Create connector instance using ConnectorBuilder. The call to LoadConfig() method
              * will configure the connector using CKFinder configuration options defined in Web.config.
@@ -49,6 +46,13 @@ namespace CKSource.CKFinder.Connector.MVCIntegration
                     (request, config) =>
                     {
                         config.LoadConfig();
+                        var privateBackend = config.GetBackend("CKFinderPrivate");
+
+                        /*
+                         * Create a key-value store provider to be used for saving CKFinder cache data.
+                         */
+                        var keyValueStoreProvider = new FileSystemKeyValueStoreProvider(privateBackend);
+
                         config.SetKeyValueStoreProvider(keyValueStoreProvider);
                     })
                 .SetAuthenticator(customAuthenticator)
