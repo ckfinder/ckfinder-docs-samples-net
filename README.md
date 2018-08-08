@@ -1,6 +1,6 @@
 # CKFinder 3 - .Net Samples
 
-This repository contains ready-to-use code samples created for the [CKFinder .Net connector documentation](http://docs.cksource.com/ckfinder3-net/).
+This repository contains ready-to-use code samples created for the [CKFinder .Net connector documentation](https://ckeditor.com/docs/ckfinder/ckfinder3-net/).
 
 ## Installation
 
@@ -10,17 +10,17 @@ This repository contains ready-to-use code samples created for the [CKFinder .Ne
 
 ```
 plugins
-+-- DiskQuota
-�   +-- CKSource.CKFinder.Connector.Plugin.DiskQuota.dll
-+-- GetFileInfo
-�   +-- CKSource.CKFinder.Connector.Plugin.GetFileInfo.dll
-+-- UserActionsLogger
-�   +-- CKSource.CKFinder.Connector.Plugin.UserActionsLogger.dll
-+-- Watermark
-    +-- CKSource.CKFinder.Connector.Plugin.Watermark.dll
+├── DiskQuota
+│   └── CKSource.CKFinder.Connector.Plugin.DiskQuota.dll
+├── GetFileInfo
+│   └── CKSource.CKFinder.Connector.Plugin.GetFileInfo.dll
+├── UserActionsLogger
+│   └── CKSource.CKFinder.Connector.Plugin.UserActionsLogger.dll
+└── Watermark
+    └── CKSource.CKFinder.Connector.Plugin.Watermark.dll
 ```
 
-To enable plugins, add their names to the [`plugins`](http://docs.cksource.com/ckfinder3-net/configuration.html#configuration_options_plugins) configuration option in the connector configuration file (by default `Web.config`):
+To enable plugins, add their names to the [`plugins`](https://ckeditor.com/docs/ckfinder/ckfinder3-net/configuration.html#configuration_options_plugins) configuration option in the connector configuration file (by default `Web.config`):
 
 ```xml
 <plugins folder="plugins">
