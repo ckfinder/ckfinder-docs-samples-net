@@ -14,17 +14,10 @@
 namespace CKSource.CKFinder.Connector.WebApp
 {
     using System.Configuration;
+    using System.Reflection;
 
-    using CKSource.CKFinder.Connector.Config;
-    using CKSource.CKFinder.Connector.Core.Builders;
     using CKSource.CKFinder.Connector.Core.Logs;
-    using CKSource.CKFinder.Connector.Host.Owin;
     using CKSource.CKFinder.Connector.Logs.NLog;
-    using CKSource.CKFinder.Connector.KeyValue.EntityFramework;
-    using CKSource.FileSystem.Dropbox;
-    using CKSource.FileSystem.Local;
-    using CKSource.FileSystem.Amazon;
-    using CKSource.FileSystem.Azure;
 
     using Microsoft.Owin.Security;
     using Microsoft.Owin.Security.Cookies;
@@ -37,7 +30,10 @@ namespace CKSource.CKFinder.Connector.WebApp
         {
             LoggerManager.LoggerAdapterFactory = new NLogLoggerAdapterFactory();
 
-            RegisterFileSystems();
+            var assembly = Assembly.Load("App_Code");
+            var connectorConfigType = assembly.GetType("CKSource.CKFinder.Connector.WebApp.ConnectorConfig");
+            var registerFileSystemsMethod = connectorConfigType.GetMethod("RegisterFileSystems", BindingFlags.Public | BindingFlags.Static);
+            registerFileSystemsMethod.Invoke(null, new object[] {});
 
             builder.UseCookieAuthentication(new CookieAuthenticationOptions
             {
@@ -45,39 +41,10 @@ namespace CKSource.CKFinder.Connector.WebApp
                 AuthenticationMode = AuthenticationMode.Active
             });
 
+            var setupConnectorMethod = connectorConfigType.GetMethod("SetupConnector", BindingFlags.Public | BindingFlags.Static);
+
             var route = ConfigurationManager.AppSettings["ckfinderRoute"];
-            builder.Map(route, SetupConnector);
-        }
-
-        private static void RegisterFileSystems()
-        {
-            FileSystemFactory.RegisterFileSystem<LocalStorage>();
-            FileSystemFactory.RegisterFileSystem<DropboxStorage>();
-            FileSystemFactory.RegisterFileSystem<AmazonStorage>();
-            FileSystemFactory.RegisterFileSystem<AzureStorage>();
-        }
-
-        private static void SetupConnector(IAppBuilder builder)
-        {
-            var keyValueStoreProvider = new EntityFrameworkKeyValueStoreProvider("CacheConnectionString");
-
-            var allowedRoleMatcherTemplate = ConfigurationManager.AppSettings["ckfinderAllowedRole"];
-            var authenticator = new RoleBasedAuthenticator(allowedRoleMatcherTemplate);
-            
-            var connectorFactory = new OwinConnectorFactory();
-            var connectorBuilder = new ConnectorBuilder();
-            var connector = connectorBuilder
-                .LoadConfig()
-                .SetAuthenticator(authenticator)
-                .SetRequestConfiguration(
-                    (request, config) =>
-                    {
-                        config.LoadConfig();
-                        config.SetKeyValueStoreProvider(keyValueStoreProvider);
-                    })
-                .Build(connectorFactory);
-
-            builder.UseConnector(connector);
+            builder.Map(route, x => setupConnectorMethod.Invoke(null, new object[] { x }));
         }
     }
 }

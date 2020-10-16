@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29709.97
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CKFinder.Connector.Plugin.Watermark", "CKFinder.Connector.Plugin.Watermark\CKFinder.Connector.Plugin.Watermark.csproj", "{0022B188-779A-444B-97DB-6839365CD1B9}"
 EndProject
@@ -54,5 +54,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AF73A0D8-9E81-4836-A0E4-6BAB91F81206}
 	EndGlobalSection
 EndGlobal

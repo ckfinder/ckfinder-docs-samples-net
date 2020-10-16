@@ -3,7 +3,7 @@
 	"dir": "ltr",
 	"langCode": "zh-cn",
 	"common": {
-		"abort": "Abort",
+		"abort": "中止",
 		"cancel": "取消",
 		"choose": "选择",
 		"close": "关闭",
@@ -35,24 +35,24 @@
 		"mb": "{size} MB",
 		"gb": "{size} GB",
 		"sizePerSecond": "{size}/s",
-		"pixelShort": "px"
+		"pixelShort": "像素"
 	},
 	"files": {
-		"autoRename": "给重名文件自动命名",
+		"autoRename": "自动重命名",
 		"countMany": "{count} 个文件",
 		"countOne": "1 个文件",
 		"deleteConfirmation": "您确定要删除 {count} 个文件吗？",
-		"fileDeleteConfirmation": "您确定要删除文件 \"{name}\" 吗?",
-		"fileRenameExtensionConfirmation": "如果改变文件扩展名，可能会导致文件不可用。\r\n确定要更改吗？",
-		"fileRenameLabel": "请输入新文件名: ",
-		"filesPaneTitle": "Files pane",
-		"filesRefresh": "Refreshing files",
+		"fileDeleteConfirmation": "您确定要删除文件 \"{name}\" 吗？",
+		"fileRenameExtensionConfirmation": "改变文件扩展名可能导致文件不可用，确定要更改吗？",
+		"fileRenameLabel": "请输入新文件名：",
+		"filesPaneTitle": "文件窗口",
+		"filesRefresh": "正在刷新文件",
 		"filterPlaceholder": "过滤",
 		"gettingFileData": "正在获取文件数据，{pleaseWait}",
-		"overwrite": "自动覆盖重名文件",
+		"overwrite": "覆盖",
 		"loadingFilesPane": {
 			"title": "正在加载...",
-			"text": "正在加载文件，{pleaseWait}"
+			"text": "文件加载完成，{pleaseWait}"
 		},
 		"emptyFilesPane": {
 			"title": "该文件夹是空的。",
@@ -66,20 +66,20 @@
 	"folders": {
 		"deleteConfirmation": "您确定要删除文件夹 \"{name}\" 吗？",
 		"destinationFolder": "目标文件夹",
-		"newNameLabel": "请输入新文件夹名称: ",
+		"newNameLabel": "请输入新文件夹名称：",
 		"newSubfolder": "创建子文件夹",
-		"renameDialogTitle": "Rename Folder",
-		"treeTitle": "Folders tree"
+		"renameDialogTitle": "重命名文件夹",
+		"treeTitle": "文件夹目录"
 	},
 	"copy": {
 		"dropMenuItem": "将文件复制至此",
 		"errorDialogTitle": "无法复制文件：",
 		"manyFilesDialogTitle": "复制 {count} 个文件到...",
-		"manyFilesWait": "正复制 {count} 个文件，{pleaseWait}",
+		"manyFilesWait": "正在复制 {count} 个文件，{pleaseWait}",
 		"oneFileDialogTitle": "复制文件到...",
 		"oneFileWait": "正在复制文件，{pleaseWait}",
 		"operationLabel": "复制文件",
-		"operationSummary": "已复制的文件数： {count}。"
+		"operationSummary": "已复制的文件数：{count}。"
 	},
 	"move": {
 		"dropMenuItem": "将文件移动至此",
@@ -89,34 +89,35 @@
 		"oneFileDialogTitle": "移动文件到...",
 		"oneFileWait": "正在移动文件，{pleaseWait}",
 		"operationLabel": "移动文件",
-		"operationSummary": "已移动的文件数： {count}。"
+		"operationSummary": "已移动的文件数：{count}。"
 	},
 	"upload": {
 		"addFiles": "添加文件",
-		"bytesCountProgress": "({bytesTotal} 中的 {bytesUploaded})",
+		"bytesCountProgress": "（{bytesTotal} / {bytesUploaded}）",
 		"details": "详情",
-		"filesCountProgress": "{filesTotal}{filesUploaded}",
-		"progressLabel": "正在上传文件，",
+		"filesCountProgress": "{filesUploaded} / {filesTotal}",
+		"progressLabel": "正在上传文件。",
 		"progressMessage": "正在上传...",
 		"selectFileLabel": "选择要上传的文件",
 		"selectFiles": "选择要上传的文件",
 		"success": "上传完成！",
-		"summary": "已上传文件： {count}"
+		"summary": "已上传文件：{count}"
 	},
 	"settings": {
 		"display": "显示：",
 		"displayDate": "日期",
 		"displayName": "文件名",
 		"displaySize": "大小",
-		"sortAscending": "Ascending",
-		"sortBy": "Sort by",
-		"sortByOrder": "Order",
-		"sortDescending": "Descending",
+		"sortAscending": "升序",
+		"sortBy": "排序",
+		"sortByOrder": "排序顺序",
+		"sortDescending": "降序",
 		"thumbnailSize": "缩略图大小",
 		"title": "设置",
-		"viewType": "View",
-		"viewTypeList": "List",
-		"viewTypeThumbnails": "Thumbnails"
+		"viewType": "视图",
+		"viewTypeCompact": "紧凑",
+		"viewTypeList": "列表",
+		"viewTypeThumbnails": "缩略图"
 	},
 	"errors": {
 		"codes": {
@@ -149,15 +150,17 @@
 			"500": "因为安全原因，文件不可浏览。请联系系统管理员并检查 CKFinder 配置文件。",
 			"501": "不支持缩略图方式。"
 		},
+		"deleteFilePermissions": "不允许删除此文件夹下文件。",
 		"fileInvalidCharacters": "文件名不能包含以下字符：{disallowedCharacters}",
-		"fileNameNotEmpty": "The file name cannot be empty.",
+		"fileNameNotEmpty": "文件名不能为空。",
 		"folderInvalidCharacters": "文件夹名称不能包含以下字符：{disallowedCharacters}",
 		"incorrectExtension": "此文件扩展名在当前文件夹中不可用。",
 		"missingFile": "请求的文件已不可用。",
 		"missingFolder": "您指定的文件夹已不可用。",
 		"noUploadFolderSelected": "需先选择一个文件。",
 		"operationCompleted": "操作完成，但有错误。",
-		"unknown": "请求的操作未能完成。(错误 {number})",
+		"renameFilePermissions": "不允许重命名此文件夹下文件。",
+		"unknown": "请求的操作未能完成。（错误 {number}）",
 		"unknownUploadError": "上传文件出错。",
 		"uploadErrors": "上传完成，但有错误。",
 		"uploadPermissions": "无文件上传权限。"
@@ -176,9 +179,9 @@
 	"editImage": {
 		"adjust": "调整",
 		"apply": "应用",
-		"confirmExit": "Are you sure you want to close? You have unsaved changes to the image.",
+		"confirmExit": "确定关闭吗？您将会丢失未保存的图片。",
 		"crop": "裁剪",
-		"downloadAction": "正在下载原始图像...",
+		"downloadAction": "正在下载原始图像。",
 		"keepAspectRatio": "保持纵横比",
 		"loading": "加载图像",
 		"presets": "预设",
@@ -211,16 +214,16 @@
 		},
 		"preset": {
 			"clarity": "清晰",
-			"concentrate": "Concentrate",
+			"concentrate": "浓缩",
 			"crossProcess": "胶片",
 			"glowingSun": "光照",
 			"grungy": "油渍",
 			"hazyDays": "雨雾",
-			"hemingway": "Hemingway",
-			"herMajesty": "Her Majesty",
+			"hemingway": "海明威",
+			"herMajesty": "雄伟",
 			"jarques": "Jarques",
-			"lomo": "LOMO",
-			"love": "Love",
+			"lomo": "Lomo",
+			"love": "爱情",
 			"nostalgia": "怀旧",
 			"oldBoot": "旧靴子",
 			"orangePeel": "橘皮",
@@ -231,47 +234,47 @@
 		}
 	},
 	"shortcuts": {
-		"title": "Keyboard Shortcuts",
+		"title": "快捷键",
 		"general": {
-			"action": "Execute default action",
-			"firstItem": "Go to first item",
-			"focusFilesPane": "Focus files pane",
-			"focusFoldersPane": "Focus folders pane or breadcrumbs",
-			"focusNext": "Focus next pane",
-			"focusToolbar": "Focus toolbar",
-			"lastItem": "Go to last item",
-			"listShortcuts": "Open this help dialog",
-			"nextItem": "Go to next item",
-			"previousItem": "Go to previous item",
-			"showContextMenu": "Open context menu",
-			"title": "General Interface"
+			"action": "执行默认操作",
+			"firstItem": "移动到第一项",
+			"focusFilesPane": "聚焦到文件窗",
+			"focusFoldersPane": "聚焦到文件夹窗或导航栏",
+			"focusNext": "聚焦到下个窗口",
+			"focusToolbar": "聚焦到工具栏",
+			"lastItem": "移动到最后一项",
+			"listShortcuts": "打开帮助框",
+			"nextItem": "移动到下一项",
+			"previousItem": "移动到前一项",
+			"showContextMenu": "打开上下文菜单",
+			"title": "通用界面"
 		},
 		"files": {
-			"addToSelectionAbove": "Add or remove files above to selection",
-			"addToSelectionBelow": "Add or remove files below to selection",
-			"addToSelectionLeft": "Add or remove file on the left to selection",
-			"addToSelectionRight": "Add or remove file on the right to selection",
-			"delete": "Delete file(s)",
-			"refresh": "Refresh files",
-			"rename": "Rename file",
-			"selectAll": "Select all files",
-			"upload": "Upload file(s)"
+			"addToSelectionAbove": "添加或删除文件到选中项上面",
+			"addToSelectionBelow": "添加或删除文件到选中项下面",
+			"addToSelectionLeft": "添加或删除文件到选中项左边",
+			"addToSelectionRight": "添加或删除文件到选中项右边",
+			"delete": "删除文件",
+			"refresh": "刷新文件",
+			"rename": "重命名文件",
+			"selectAll": "选中全部文件",
+			"upload": "上传文件"
 		},
 		"folders": {
-			"collapseOrParent": "Collapse folder / Go to parent folder",
-			"delete": "Delete folder",
-			"expandOrSubfolder": "Expand folder / Go to first subfolder",
-			"title": "Folders Pane"
+			"collapseOrParent": "展开文件夹",
+			"delete": "删除文件夹",
+			"expandOrSubfolder": "折叠文件夹",
+			"title": "文件夹窗"
 		},
 		"keys": {
-			"ctrl": "Control",
-			"delete": "Delete",
-			"downArrow": "Down arrow",
-			"escape": "Escape",
-			"leftArrow": "Left arrow",
-			"question": "Question mark",
-			"rightArrow": "Right arrow",
-			"upArrow": "Up arrow"
+			"ctrl": "控制键",
+			"delete": "删除键",
+			"downArrow": "下箭头",
+			"escape": "退出",
+			"leftArrow": "左箭头",
+			"question": "问题标记",
+			"rightArrow": "右箭头",
+			"upArrow": "上箭头"
 		},
 		"keysAbbreviations": {
 			"alt": "alt",

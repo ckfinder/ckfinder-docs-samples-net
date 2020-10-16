@@ -46,9 +46,9 @@
 		"fileRenameExtensionConfirmation": "Wollen Sie wirklich die Dateierweiterung ändern? Die Datei könnte unbrauchbar werden!",
 		"fileRenameLabel": "Bitte geben Sie den neuen Dateinamen an: ",
 		"filesPaneTitle": "Dateibereich",
-		"filesRefresh": "Refreshing files",
+		"filesRefresh": "Aktualisiere Dateien",
 		"filterPlaceholder": "Filter",
-		"gettingFileData": "Getting file data.",
+		"gettingFileData": "Rufe Informationen zu Datei auf.",
 		"overwrite": "Überschreiben",
 		"loadingFilesPane": {
 			"title": "Laden...",
@@ -56,7 +56,7 @@
 		},
 		"emptyFilesPane": {
 			"title": "Das Verzeichnis ist leer.",
-			"text": "Use the <strong>Upload</strong> button or <strong>drag and drop</strong> your files here."
+			"text": "Benutzen Sie den <strong>Hochladen</strong> Button oder <strong>ziehen und legen</strong> Sie Ihre Dateien hier ab."
 		},
 		"filterFilesEmpty": {
 			"title": "Nichts gefunden.",
@@ -84,9 +84,9 @@
 	"move": {
 		"dropMenuItem": "Hierher verschieben",
 		"errorDialogTitle": "Dateien, die nicht verschoben werden können:",
-		"manyFilesDialogTitle": "Verschieben {count} Dateien in...",
-		"manyFilesWait": "Verschieben {count} Dateien.",
-		"oneFileDialogTitle": "Verschieben die Datei in...",
+		"manyFilesDialogTitle": "Verschiebe {count} Dateien in...",
+		"manyFilesWait": "Verschiebe {count} Dateien.",
+		"oneFileDialogTitle": "Verschiebe die Datei in...",
 		"oneFileWait": "Verschieben einer Datei.",
 		"operationLabel": "Verschieben von Dateien",
 		"operationSummary": "Anzahl der Dateien verschoben: {count}."
@@ -115,6 +115,7 @@
 		"thumbnailSize": "Miniaturgröße",
 		"title": "Einstellungen",
 		"viewType": "Listenansicht",
+		"viewTypeCompact": "Compact",
 		"viewTypeList": "Liste",
 		"viewTypeThumbnails": "Miniaturansicht"
 	},
@@ -149,6 +150,7 @@
 			"500": "Der Dateibrowser wurde aus Sicherheitsgründen deaktiviert. Bitte benachrichtigen Sie Ihren Systemadministrator und prüfen Sie die Konfigurationsdatei.",
 			"501": "Die Miniaturansicht wurde deaktivert."
 		},
+		"deleteFilePermissions": "Removing files is not allowed in this folder.",
 		"fileInvalidCharacters": "Der Dateiname darf nicht eines der folgenden Zeichen enthalten: {disallowedCharacters}",
 		"fileNameNotEmpty": "Der Dateiname darf nicht leer sein.",
 		"folderInvalidCharacters": "Der Verzeichnisname darf nicht eines der folgenden Zeichen enthalten: {disallowedCharacters}",
@@ -157,13 +159,14 @@
 		"missingFolder": "Der Ordner, den Sie versuchen zu erreichen, ist nicht mehr verfügbar.",
 		"noUploadFolderSelected": "Bitte ein Verzeichnis vor dem Hochladen wählen.",
 		"operationCompleted": "Der Betrieb wurde mit Fehlern abgeschlossen.",
+		"renameFilePermissions": "Renaming files is not allowed in this folder.",
 		"unknown": "Ihre Anfrage konnte nicht bearbeitet werden. (Fehler {number})",
 		"unknownUploadError": "Fehler bei Dateitragung.",
 		"uploadErrors": "Hochladen mit Fehlern abgeschlossen.",
 		"uploadPermissions": "Datei hochladen nicht erlaubt."
 	},
 	"chooseResizedImage": {
-		"title": "Choose Resized",
+		"title": "Wähle Skaliertes",
 		"originalSize": "Originalgröße",
 		"sizes": {
 			"custom": "Benutzerdefiniert",
@@ -176,12 +179,12 @@
 	"editImage": {
 		"adjust": "Anpassen",
 		"apply": "Anwenden",
-		"confirmExit": "Are you sure you want to close? You have unsaved changes to the image.",
+		"confirmExit": "Sind Sie sicher, daß Sie schließen möchten? Die Änderungen sind noch nicht gespeichert.",
 		"crop": "Zuschneiden",
 		"downloadAction": "Originalbild herunterladen.",
 		"keepAspectRatio": "Seitenverhältnis beibehalten",
 		"loading": "Bild wird geladen",
-		"presets": "Presets",
+		"presets": "Voreinstellungen",
 		"reset": "Rücksetzen",
 		"resize": "Größe ändern",
 		"rotate": "Drehen",
@@ -193,11 +196,11 @@
 		"saveDialogSaveAs": "Speichern als:",
 		"saveDialogTitle": "Änderungen speichern",
 		"title": "Bild bearbeiten",
-		"transformationAction": "Applying transformations.",
+		"transformationAction": "Wende Transformationen an.",
 		"uploadAction": "Hochladen bearbeitete Bild.",
 		"filters": {
 			"brightness": "Helligkeit",
-			"clip": "Clip",
+			"clip": "Zuschneiden",
 			"contrast": "Kontrast",
 			"exposure": "Belichtung",
 			"gamma": "Gamma",
